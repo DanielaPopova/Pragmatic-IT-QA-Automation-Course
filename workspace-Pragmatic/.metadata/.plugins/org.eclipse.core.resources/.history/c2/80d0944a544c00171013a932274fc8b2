@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class Problem07_DivisibleBy3 {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		System.out.println("Enter count");
+		int count = input.nextInt();
+		int startNumber = 3;
+		int total = 0;
+		
+		while (total <= count) {
+			if (total == count) {
+				break;
+			}
+			
+			if (startNumber % 3 == 0) {
+				if (total == count) {
+					System.out.print(startNumber + " ");
+				} else {
+					System.out.print(startNumber + ", ");
+				}
+				
+				total++;
+			}			
+			
+			startNumber++;
+		}		
+	}
+
+}

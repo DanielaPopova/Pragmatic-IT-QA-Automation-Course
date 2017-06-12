@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Problem01_04_PrintingNumbers&apos; to &apos;Problem01_05_PrintingNumbers&apos;&#x0D;&#x0A;- Original project: &apos;HW_Loops&apos;&#x0D;&#x0A;- Original element: &apos;Problem01_04_PrintingNumbers&apos;&#x0D;&#x0A;- Renamed element: &apos;Problem01_05_PrintingNumbers&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Problem01_04_PrintingNumbers&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{Problem01_04_PrintingNumbers.java[Problem01_04_PrintingNumbers" matchStrategy="1" name="Problem01_05_PrintingNumbers" qualified="false" references="true" similarDeclarations="false" stamp="1496926001683" textual="false" version="1.0"/>
+</session>

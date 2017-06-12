@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="if(firstNumber &lt;= thirdNumber &amp;&amp; thirdNumber &lt;= secondNumber)" key="selection"/>
+		<list key="findhistory">
+			<item value="if(firstNumber &lt;= thirdNumber &amp;&amp; thirdNumber &lt;= secondNumber)"/>
+		</list>
+	</section>
+</section>

@@ -1,0 +1,15 @@
+
+public class Problem01_04_PrintingNumbers {
+
+	public static void main(String[] args) {
+		
+
+	}
+	
+	public static void printNumbersInRange(int start, int end){
+		for (int i = start; i < end; i++) {
+			System.out.print(i + " ");
+		}
+	}
+
+}

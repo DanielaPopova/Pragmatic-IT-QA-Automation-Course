@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class Problem02_TwoNumbersCalculations {
+	
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in);
+		
+		// using integers
+		System.out.println("Enter first integer number");
+		int firstNumber = input.nextInt();
+		
+		System.out.println("Enter second integer number");
+		int secondNumber = input.nextInt();
+		
+		int addition = firstNumber + secondNumber;
+		int subtraction = Math.abs(firstNumber - secondNumber);
+		int product = firstNumber * secondNumber;
+		double quotient =  (double)firstNumber / secondNumber;
+		int remainder = firstNumber % secondNumber;
+		int integerDivision = firstNumber / secondNumber;
+		
+		System.out.printf("Addition: %d%n Subtraction: %d%n Product: %d%n Division: %.2f%n Remainder: %d%n Integer Division: %d%n", addition, subtraction, product, quotient, remainder, integerDivision);				
+	}
+}
