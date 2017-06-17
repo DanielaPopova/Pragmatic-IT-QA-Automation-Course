@@ -9,6 +9,25 @@ public class Computer {
 	private double freeMemory;
 	private String operationSystem;
 	
+	public Computer() {
+		this.isNotebook = false;
+		this.operationSystem = "Win XP";
+	}
+	
+	public Computer(int year, double price, double hardDiskMemory, double freeMemory) {
+		this();
+		this.year = year;
+		this.price = price;
+		this.hardDiskMemory = hardDiskMemory;
+		this.freeMemory = freeMemory;
+	}
+	
+	public Computer(int year, double price, boolean isNotebook, double hardDiskMemory, double freeMemory, String operationSystem) {
+		this(year, price, hardDiskMemory, freeMemory);
+		this.isNotebook = isNotebook;
+		this.operationSystem = operationSystem;
+	}
+	
 	// TODO: add validations
 	public int getYear() {
 		return this.year;
@@ -65,6 +84,16 @@ public class Computer {
 		} else {
 			this.freeMemory -= memory;
 		}			
+	}
+	
+	public int comparePrice(Computer computer){
+		if(this.price > computer.price){
+			return -1;
+		} else if (this.price < computer.price){
+			return 1;
+		} else {
+			return 0;
+		}	
 	}
 	
 	@Override

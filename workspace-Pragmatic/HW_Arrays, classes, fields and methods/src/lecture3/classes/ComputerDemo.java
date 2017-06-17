@@ -31,6 +31,20 @@ public class ComputerDemo {
 		
 		asus.setOperationSystem("Windows 10");
 		System.out.println(asus.getOperationSystem());
+		
+		// task from lecture 4
+		Computer acer = new Computer();
+		Computer toshiba = new Computer(2016, 550, 500, 200);
+		Computer apple = new Computer(2014, 800, true, 256, 120, "OS X Yosemite");
+		
+		int comparator = toshiba.comparePrice(apple);
+		
+		if(comparator == 1){
+			System.out.println("Apple has bigger price than toshiba");
+		} else if (comparator == -1){
+			System.out.println("Toshiba has bigger price than apple");
+		} else {
+			System.out.println("Both computers have equal price");
+		}
 	}
-
 }
