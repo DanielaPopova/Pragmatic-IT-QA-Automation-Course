@@ -31,10 +31,10 @@ public class StartUp {
 		adminPesho.createUser("Mila", UserType.USER);
 		
 		// "User already exists in data base!" exception message 
-		adminPesho.createUser("Ada11", UserType.USER);
+		//adminPesho.createUser("Ada11", UserType.USER);
 		
 		// "Data base is already full" exception message
-		adminPesho.createUser("brym", UserType.USER);
+		//adminPesho.createUser("brym", UserType.USER);
 		
 	}
 

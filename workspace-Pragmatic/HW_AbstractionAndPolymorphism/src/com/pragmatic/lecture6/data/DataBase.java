@@ -12,7 +12,7 @@ public class DataBase {
 	
 	public DataBase(int maxUsersCount) {		
 		this.users = new ArrayList<User>();
-		this.maxUsersCount = maxUsersCount;
+		setMaxUsersCount(maxUsersCount);
 	}
 
 	public List<User> getUsers() {
@@ -21,5 +21,13 @@ public class DataBase {
 	
 	public int getMaxUsersCount() {
 		return this.maxUsersCount;
+	}
+
+	private void setMaxUsersCount(int maxUsersCount) {
+		if (maxUsersCount < 0) {
+			throw new IllegalArgumentException("User count cannot be negative!");
+		}
+		
+		this.maxUsersCount = maxUsersCount;
 	}	
 }

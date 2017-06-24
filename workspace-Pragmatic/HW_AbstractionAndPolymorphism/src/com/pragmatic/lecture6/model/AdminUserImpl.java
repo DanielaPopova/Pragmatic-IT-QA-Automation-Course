@@ -17,7 +17,7 @@ public class AdminUserImpl extends AbstractUser implements AdminUser{
 	}
 	
 	@Override
-	public User createUser(String username, UserType userType) throws DataBaseInvalidOperationException {
+	public User createUser(String username, UserType userType) {
 		
 		if (this.getUserState().equals(UserState.LOGGED_OUT)) {
 			throw new DataBaseInvalidOperationException("User must be logged in to proceed!");
