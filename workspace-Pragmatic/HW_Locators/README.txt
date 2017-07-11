@@ -1,0 +1,1 @@
+Write all possible locators for the given elements from the screenshots

@@ -1,0 +1,40 @@
+1. Element1
+- by LINK
+link=Месечен
+- by XPATH
+xpath=//a[text()='Месечен']
+xpath=//a[contains(text(), 'Месечен')]
+xpath=//div[@id='astroContent']/div/a
+- by CSS
+css=#astroContent > div.info > a.right
+
+2. Element2
+- by XPATH
+//ul[@id='topnav']/li[4]/a/span
+- by CSS
+css=ul#topnav li:nth-of-type(4) > a > span
+- by JS/DOM
+document.getElementById('topnav').getElementsByTagName('LI')[3].firstChild.firstChild
+
+3. Element3
+- by LINK
+link=Login
+- by XPATH
+//a[text()='Login']
+- by CSS
+css=table.bottom > tbody > tr > td:nth-of-type(4) > a
+css=a[href='/login.php']
+
+4. Element5
+- by XPATH
+//form[@class='search-block-form']/p/input[@type='submit']
+//input[@class='search-button'][@type='submit']
+- by CSS
+css=input.search-button[type='submit']
+
+5. Element7
+- by XPATH
+//section[contains(@class, 'threeboxes plan enterprice')]/a[@href='/enterprise-hosting']
+- by CSS
+css=section.threeboxes.plan.enterprice > a
+css=a.extralarge_button.bblue[href='/enterprice-hosting']
