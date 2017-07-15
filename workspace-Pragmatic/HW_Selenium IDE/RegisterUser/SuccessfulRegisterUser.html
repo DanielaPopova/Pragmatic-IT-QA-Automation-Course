@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://shop.pragmatic.bg/index.php?route=account/register" />
+<title>SuccessfulRegisterUser</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">SuccessfulRegisterUser</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>/index.php?route=account/register</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=firstname</td>
+	<td>dani</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=lastname</td>
+	<td>bani</td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>Math.round(Math.random()*13579)</td>
+	<td>random</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=email</td>
+	<td>selenium${random}@ab.bg</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=telephone</td>
+	<td>456789</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=address_1</td>
+	<td>mladost</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=city</td>
+	<td>sofia</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=postcode</td>
+	<td>1700</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=country_id</td>
+	<td>label=Bulgaria</td>
+</tr>
+<tr>
+	<td>waitForSelectOptions</td>
+	<td>name=zone_id</td>
+	<td>label=Sofia</td>
+</tr>
+<tr>
+	<td>select</td>
+	<td>name=zone_id</td>
+	<td>label=Sofia</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=password</td>
+	<td>danito</td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=confirm</td>
+	<td>danito</td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>name=agree</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>css=input.button</td>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyText</td>
+	<td>css=h1</td>
+	<td>Your Account Has Been Created!</td>
+</tr>
+<tr>
+	<td>verifyElementPresent</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>link=Logout</td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>
